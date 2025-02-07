@@ -1,0 +1,207 @@
+.auth-wrap {
+  .logo {
+    padding: 20px 0 50px 0;
+    img {
+      width: 120px;
+    }
+  }
+
+  h2 {
+    font-size: 39px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: $black-dark;
+  }
+
+  h1 {
+    font-size: 41px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c2c2c;
+    margin: 70px 0 30px 0;
+  }
+
+  p {
+    font-size: 16px;
+    color: #888888;
+
+    a {
+      text-decoration: underline;
+      color: #4b7eea;
+      font-weight: 500;
+    }
+  }
+
+  .auth-form {
+    .form-group {
+      position: relative;
+
+      label {
+        color: #616161;
+        font-size: 14px;
+        margin-bottom: 3px;
+      }
+
+      input {
+        padding: 8px 44px 8px 10px;
+        margin-bottom: 5px;
+
+        &::placeholder {
+          color: #9e9d9d;
+        }
+      }
+
+      i {
+        position: absolute;
+        top: 31px;
+        right: 20px;
+        font-size: 22px;
+        color: #9e9d9d;
+      }
+    }
+
+    .forget-password {
+      margin-top: 10px;
+
+      a {
+        font-size: 16px;
+        color: #888888;
+      }
+    }
+
+    .sign-up-button {
+      margin: 35px 0 20px 0;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    }
+
+    h6 {
+      font-size: 16px;
+      color: #616161;
+      text-align: center;
+
+      a {
+        color: #616161;
+      }
+    }
+
+    .sign-up-google {
+      margin: 20px 0 0 0;
+      position: relative;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 40px;
+        position: absolute;
+        top: 3px;
+        left: 6px;
+      }
+    }
+  }
+
+  .banner-image {
+    background-color: #000;
+    position: relative;
+    height: 100vh;
+
+    .close-icon {
+      cursor: pointer;
+      i {
+        font-size: 22px;
+      }
+    }
+
+    .banner-content {
+      position: absolute;
+      left: 65px;
+      bottom: 10%;
+
+      h1 {
+        color: #ffffff;
+        width: 432px;
+        font-size: 55px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 14px;
+        color: #959596;
+      }
+    }
+  }
+}
+
+.divider-or {
+  position: relative;
+  .line {
+    background-color: #eaeaea;
+    height: 1px;
+    width: 100%;
+  }
+
+  .text-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    span {
+      background: white;
+      color: #878787;
+      padding: 3px 14px;
+      position: absolute;
+      top: -16px;
+      display: inline-block;
+      font-style: italic;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bg-control {
+    position: relative;
+    top: 33px;
+
+    .banner-image {
+      height: 70vh;
+      .banner-content {
+        left: 15px;
+        top: 100px;
+        h1 {
+          color: #ffffff;
+          width: 247px;
+          font-size: 36px;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .auth-wrap {
+    .auth-form {
+      .sign-up-google {
+        img {
+          width: 35px;
+          position: absolute;
+          top: -2px;
+          left: 6px;
+        }
+      }
+    }
+  }
+}

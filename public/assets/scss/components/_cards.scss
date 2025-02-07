@@ -1,0 +1,255 @@
+.theme-card {
+  background-color: $white;
+  padding: 20px 24px;
+  border-radius: $radius;
+  min-height: 173px;
+  .card-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    h6 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+    }
+    i {
+      font-size: 22px;
+      color: $primary;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+  P {
+    font-size: 14px;
+    color: #5a616e;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+  }
+}
+.info-card {
+  h6 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  P {
+    font-size: 14px;
+  }
+}
+.rc-head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  .avatar {
+    img {
+      width: 70px;
+    }
+  }
+  .name-detail {
+    h6 {
+      font-size: 16px;
+      line-height: 24px;
+      color: #5a616e;
+      font-weight: 600;
+      margin: 0;
+    }
+    p {
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: 300;
+      color: #5a616e;
+    }
+  }
+}
+.rc-comment {
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #00000099;
+  }
+}
+.feature-cart {
+  margin-bottom: 30px;
+  h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    text-align: center;
+  }
+  P {
+    font-size: 14px;
+    color: #5a616e;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 275px;
+  }
+}
+.mean-card {
+  background: linear-gradient(254.45deg, #79b657 -0.71%, #037b7a 100%);
+  text-align: center;
+  border-radius: $radius;
+  padding: 35px 0;
+  height: 200px;
+
+  .info {
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 600;
+      color: $white;
+      max-width: 200px;
+      margin: auto;
+    }
+  }
+}
+.bg-icon {
+  background: #ffffff33;
+  width: 76px;
+  height: 76px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  i {
+    font-size: 35px;
+    color: $white;
+  }
+}
+.store-card {
+  text-align: center;
+  border: 1px solid #6caa3d;
+  border-radius: $radius;
+  background-color: $white;
+  box-shadow: 0px 0px 10px 4px #00000005;
+  padding: 22px 0;
+  .owner {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: #178575;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: 16px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 44px;
+    color: #121c30;
+    margin: 0;
+  }
+}
+.export-card {
+  text-align: center;
+  border: 1px solid #6caa3d;
+  border-radius: $radius;
+  background-color: $white;
+  box-shadow: 0px 0px 10px 4px #00000005;
+  padding: 30px;
+  h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: $black-dark;
+  }
+  img {
+    border-radius: $radius;
+    border: 1px solid #7c9680;
+    width: 100%;
+  }
+}
+.pricing-card {
+  background: #63ab5e14;
+  text-align: center;
+  border-radius: $radius;
+  padding: 50px 0px 100px 0px;
+  h3 {
+    color: #63ab5e;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $white;
+    background: #63ab5e;
+    padding: 6px 20px;
+    border-radius: 12px;
+    display: inline-block;
+  }
+}
+.pricing-list {
+  padding: 0;
+  max-width: 500px;
+  margin: auto;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    i {
+      color: $primary;
+      width: 22px;
+    }
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #5a616e;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rc-head .avatar img {
+    width: 50px;
+  }
+  .rc-comment p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .pricing-card h3 {
+    font-size: 30px;
+    line-height: 39px;
+    margin-bottom: 15px;
+  }
+
+  .pricing-list {
+    padding-left: 10px;
+    li {
+      gap: 5px;
+      p {
+        font-size: 11px;
+      }
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .pricing-card {
+    padding: 50px 0px;
+    h6 {
+      font-size: 12px;
+      line-height: 17px;
+      padding: 5px 10px;
+    }
+  }
+}

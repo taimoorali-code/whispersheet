@@ -1,0 +1,113 @@
+.simple-section {
+  padding: 100px 0;
+  position: relative;
+}
+.narrow-section {
+  padding: 70px 0;
+  position: relative;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+.bg-green {
+  background-color: $primary;
+}
+.bg-orange {
+  background-color: $orange;
+}
+.black-bg {
+  background: #323337;
+}
+.bg-orange-gray {
+  background: #ff7a4d1a;
+}
+.bg-graident-gray {
+  background: linear-gradient(
+    90.27deg,
+    rgba(99, 171, 94, 0.06) 0.22%,
+    rgba(255, 122, 77, 0.1) 98.52%
+  );
+}
+
+.section-title {
+  &.text-center {
+    max-width: 600px;
+    margin: auto;
+  }
+  p {
+    color: $black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -1px;
+  }
+  h4 {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $primary;
+  }
+  h1 {
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 93px;
+    color: $white;
+  }
+}
+
+.divider {
+  height: 1px;
+  background-color: #e9e9e9;
+}
+
+.bg-lite {
+  background-color: #f4f4f4;
+}
+
+div::-webkit-scrollbar {
+  width: 4px;
+}
+
+div::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.heading {
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #121c3099;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .simple-section {
+    padding: 30px 0;
+  }
+  .section-title {
+    h3 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+  .narrow-section {
+    padding: 50px 0;
+  }
+}
